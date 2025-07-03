@@ -1,0 +1,8 @@
+services:
+  web:               # name of service
+    build: .
+    ports:
+      - "5000:5000"  # container exposes port 5000
+    volumes:
+      - .:/app       # keep local workdir in sync with folder /app inside the container
+      
